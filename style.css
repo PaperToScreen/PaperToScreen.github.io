@@ -1,5 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: url("Camera.jpg");
+  background-size: cover;
 }
 
 /* Center the loader */
@@ -71,7 +73,9 @@ body {
 
 #main-header {
   font-size: 50px;
-  font-size: 12vw;
+  font-size: 15vw;
+  color: #FFF;
+  text-shadow: 0px 0px 8px #000;
   font-family: 'Special Elite', cursive;
   padding-top: 100px;
   padding-top: 20vh;
@@ -80,7 +84,56 @@ body {
 
 #quote {
   font-family: 'Dancing Script', cursive;
-  font-size: 3vw;
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 0px 0px 3px #000;
   padding-bottom: 5vh;
   transition: all 1s;
+}
+
+#links {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.page-link {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #000;
+}
+
+.page-link:hover {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #F00;
+}
+
+.page-link img {
+    -webkit-filter: brightness(100%);
+}
+
+.page-link img:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.page-link:active {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #0F0;
+}
+
+.page-link:focus {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #00F;
 }

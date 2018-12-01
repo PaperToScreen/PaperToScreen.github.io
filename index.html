@@ -27,17 +27,23 @@
     </div>
     <div id="links" class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+        <div class="col-sm-3">
+          <a class="page-link" href="about-me.html">
+            <img class="img-fluid rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>About Me</h2>
+          </a>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+        <div class="col-sm-6">
+          <a class="page-link" href="genre.html">
+            <img class="img-fluid rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Genre</h2>
+          </a>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+        <div class="col-sm-3">
+          <a class="page-link" href="contact.html">
+            <img class="img-fluid rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Contact Me</h2>
+          </a>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
@@ -53,16 +59,17 @@
 
   function shrinkTitle() {
     myVar = setTimeout(function() {
-      $("#main-header").css("font-size", "8vw");
+      $("#main-header").css("font-size", "10vw");
       $("#main-header").css("padding-top", "10vh");
-      $("#quote").css("font-size", "2vw");
+      //$("#quote").css("font-size", "2.5vw");
+      $("#links").css("opacity", "1");
     }, 1500);
   }
 
   function showPage() {
     //document.getElementById("loader").style.display = "none";
-    document.getElementById("camera").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+    $("#camera").css("display", "none");
+    $("#myDiv").css("display", "block");
     shrinkTitle();
   }
   </script>
