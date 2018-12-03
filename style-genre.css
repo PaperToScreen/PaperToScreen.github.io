@@ -1,22 +1,33 @@
+body{
+  color: #FFF;
+  background-color: #000;
+}
+
 #back-button {
+  color: white;
   float: left;
   margin: 20px 0 0 0;
 }
 
 #top-button {
+  color: white;
   float: right;
   margin: 20px;
 }
 
 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
   margin: 12px 0 18px 0;
+  font-weight: bold;
+  color:
 }
 
 .genre-title {
   color: white;
   font-size: 48px;
   padding: 20px;
-  background-color: #444;
+  background-color: #800080;
 }
 
 .carousel-holder {
@@ -88,4 +99,17 @@ h1 {
       visibility: visible;
   }
 
+}
+#fantasy{
+  background:#000066;
+}
+
+#action{
+  background:#003366;
+}
+
+.img-fluid mx-auto d-block {
+  background-size: cover;
+  height: 200px;
+  width: 200px;
 }
